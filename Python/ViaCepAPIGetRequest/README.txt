@@ -1,0 +1,1 @@
+Simple application that makes a GET Request to a REST API to retrieve information related to a brazilian zip code.

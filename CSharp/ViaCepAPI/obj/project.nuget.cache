@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/4/AoA+jpdaqhiC1VoU0PIhjNXWdxi9gPTocdrbMHqSyMUDs89gSfc7Y08KMgsVNrE5+2/nKoRqDy4pRGtOB1g==",
+  "success": true,
+  "projectFilePath": "/home/tiago/Faculdade/2024/Faculdade_DesenvolvimentoWebMobileEJogos/CSharp/ViaCepAPI/ViaCepAPI.csproj",
+  "expectedPackageFiles": [
+    "/home/tiago/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.7/microsoft.aspnetcore.app.ref.8.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}

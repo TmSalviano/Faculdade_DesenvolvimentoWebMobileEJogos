@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 2px;
+    background-color: none;
+    border: 0;
+    color: whitesmoke;
+}
+
+header {
+    height:fit-content;
+}
+
+body {
+    background-color:rgba(0, 0, 0, 0.882);
+    color: black;
+    text-align: center;
+}
+
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+article.Zelda {
+    background-color: rgb(0, 44, 0, 0.8);
+}
+
+article.MortalKombat {
+    background-color: rgba(0, 42, 42, 0.8);
+}
+
+article.MarioKart {
+    display: block;
+    background-color: rgb(107, 107, 107, 0.8);
+}
+
+header h1 {
+    text-decoration:line-through;
+}
+
+header span.header_span {
+    color:red;
+
+}

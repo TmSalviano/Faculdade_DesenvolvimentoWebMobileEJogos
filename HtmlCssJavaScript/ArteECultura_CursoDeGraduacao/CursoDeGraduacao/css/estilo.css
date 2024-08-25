@@ -1,0 +1,150 @@
+/* Formatação geral*/
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background-color: rgba(39, 30, 30, 0.644);
+	font-family: Courier New,"Trebuchet MS",sans-serif; 
+	
+}
+header{
+	
+	
+	height: 150px;
+	
+}
+header img{
+	width: 300 px;
+	height: 150px;
+	float:left;
+	position: relative;
+}
+.clear{
+	clear: both;
+}
+#container{
+	width: 1400px;
+	margin: 0 auto;
+}
+borda{
+	border: 1px solid red ;
+}
+
+/* Formatação do header*/
+
+
+#titulo{
+		
+	text-align: center;
+	padding-top:40px;
+
+}
+
+/* Barra de navegação*/
+#navegacao-topo{
+	display: block;
+	/*margin: 20px 515px ;*/
+}	
+#navegacao-topo ul li{
+	float: center;
+	background: #0c0709;	
+	border:5px 10px;
+	border-radius: 50px;
+
+}
+#navegacao-topo ul li a {
+	color: white;	
+}
+/* Conteudo*/
+#conteudo{
+	margin-top: 60px;
+}
+#barra-lateral{
+	width: 300px;
+	float: left;
+	margin: 0 0 20px -0px;
+	
+	background-color: rgba(71, 65, 65, 0.582);
+	
+}	
+#barra-secundaria{
+	width: 390px;
+	float: left;
+	margin:  0 0 20px 105px;
+	
+	background-color: rgb(206, 200, 200);
+}
+#barra-tercearia{
+	width: 390px;
+	float: left;
+	margin: 0 0 20px 105px;
+	background-color: rgba(9, 255, 0, 0.3);
+	
+}
+/*Barra lateral*/
+#titulo-lateral{
+	padding: 10px;
+	text-align: center;
+}
+#conteudo-lateral ul li a{
+	color: white;	
+}
+#conteudo-lateral ul li{
+	color: white;
+	padding: 10px;
+	
+}
+/*barra secundária*/
+#barra-secundaria  h2{
+	padding: 15px;
+	margin-top: 20px;
+}
+#barra-secundaria p{
+	padding: 15px;
+	font-size: 1.3em;
+}
+/*barra terciaria*/
+#barra-tercearia  h2{
+	padding: 15px;
+	margin-top: 20px;
+}
+#barra-tercearia p{
+	padding: 15px;
+	font-size: 1.3em;
+}
+/*Número de colunas na página*/
+#duas-colunas #barra-secundaria {
+	width:780px ;
+}
+#uma-coluna #barra-secundaria {
+	width: 1080px;
+	margin: 0 160px 0 160px;
+}
+
+/*Fotos*/
+
+#fotos img{
+	padding: 6px;
+}
+#fotos div{
+	margin: 0 60px 50px 60px;
+	
+}
+
+
+#duas-colunas.aniverana #fotos {
+	margin: 0 70px 50px 70px;
+}
+#duas-colunas.aniverdani #fotos {
+	margin: 0 18px 50px 18px;
+}

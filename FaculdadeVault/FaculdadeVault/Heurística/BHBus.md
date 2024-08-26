@@ -1,0 +1,21 @@
+- ■ visibilidade do estado do sistema; 
+	- Mostra onde o ônibus está com gps e quanto tempo
+- ■ mapeamento entre o sistema e o mundo real; 
+	- Possibilidade de ver horários das linhas e rotas do ônibus
+- ■ liberdade e controle ao usuário; 
+	- Possibilidade de recarregar o cartão físico e verificar o saldo 
+	- (opções de fazer recarga com cartão de crédito, pix) 
+- ■ consistência e padrões; 
+	- Ícones são consistentes com outros cites e o mundo real 
+- ■ prevenção de erros; 
+	- Te fala qual o sentido do onibus 
+- ■ reconhecer em vez de relembrar; 
+	- Uso de ícones padrões 
+- ■ flexibilidade e eficiência de uso;
+	- Pagamento da passagem do transporte público utilizando Qr code, dispensando o uso do cartão físico. 
+- ■ design estético e minimalista; 
+	- Cores chamativas que representam a empresa tranfacil Mapeamento direto entre ações e interações do usuario
+- ■ suporte para o usuário reconhecer, diagnosticar e recuperar erros; 
+	- Sac com serviços de bloqueio de cartão em caso de perda, comunicar carga não validada 
+- ■ ajuda e documentação. 
+	- Tem tutorial de como utilizar a recarga

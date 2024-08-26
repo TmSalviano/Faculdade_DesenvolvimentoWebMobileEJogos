@@ -1,0 +1,25 @@
+- ■ visibilidade do estado do sistema; 
+	- Rastreio das entregas 
+- ■ mapeamento entre o sistema e o mundo real; 
+	- Ícones e imagens que relembram suas respectivas áreas(mercados,restaurantes) 
+- ■ liberdade e controle ao usuário; 
+	- Métodos de pagamento variados e opção de pagar via app ou na entrega.
+	- Opções de restaurantes e mercados, farmácias, pet shop e distribuidoras de bebidas todos representados por imagens relacionadas a cada item 
+- ■ consistência e padrões; 
+	- Na maioria das vezes os ícones e imagens são representados por comidas e bebidas 
+- ■ prevenção de erros; 
+	- Códigos de entrega 
+- ■ reconhecer em vez de relembrar; 
+	- Cores da empresa muito marcantes e presentes tanto no aplicativo quanto nas propagandas 
+- ■ flexibilidade e eficiência de uso; 
+	- Métodos de pagamento variados e opção de pagar via app ou na entrega. 
+	- Carteira iFood para recarregar saldo e receber reembolso 
+- ■ design estético e minimalista; 
+	- Muito poluído em questão de dados 
+- ■ suporte para o usuário reconhecer, diagnosticar e recuperar erros; 
+	- Caso tenha algum problema com o pedido eles fazem estorno 
+- ■ ajuda e documentação. 
+	- Suporte do iFood
+- - ■ Melhorias
+	- ■ liberdade e controle ao usuário; 
+	 - Poderia ter opção de pagar uma taxa extra para quem quer receber o pedido na porta (no caso quem mora nem apartamento e não quer descer até a portaria para receber o pedido) 

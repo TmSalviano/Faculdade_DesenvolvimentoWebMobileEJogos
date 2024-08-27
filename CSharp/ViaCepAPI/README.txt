@@ -1,1 +1,0 @@
-This is a simple console application to automatically get information related to a certain brazilian zip code.

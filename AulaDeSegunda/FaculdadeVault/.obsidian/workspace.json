@@ -45,7 +45,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Heurística/BHBus.md",
+                "file": "Heurística/IFood.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Heurística/BHBus.md",
+                "file": "Heurística/IFood.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Heurística/BHBus.md",
+                "file": "Heurística/IFood.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Heurística/BHBus.md"
+                "file": "Heurística/IFood.md"
               }
             }
           }
@@ -179,10 +179,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "55a850d835465974",
+  "active": "44a8a0ad4d50a5cf",
   "lastOpenFiles": [
-    "Heurística/IFood.md",
     "Heurística/BHBus.md",
+    "Heurística/IFood.md",
     "Heurística/Uber.md",
     "Welcome.md",
     "Heurística"

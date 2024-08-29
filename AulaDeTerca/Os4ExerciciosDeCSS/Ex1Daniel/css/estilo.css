@@ -1,0 +1,125 @@
+/* Formatação geral*/
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+a{
+	text-decoration: none;
+}
+
+body{
+	background-color: rgb(255, 255, 255);
+	font-family: Courier New,"Trebuchet MS",sans-serif; 
+	
+}
+header{
+	
+	
+	height: 150px;
+	
+}
+
+
+#container{
+	width: 1400px;
+	margin: 0 auto;
+}
+
+
+/* Formatação do header*/
+
+
+#titulo{
+		
+	text-align: center;
+	padding-top:40px;
+	margin-right:152px ;
+}
+
+/* Barra de navegação*/
+#navegacao-topo{
+	
+	
+	
+}
+#navegacao-topo ul {
+	text-align: center;
+	background : purple;
+	opacity: 0.8;
+	margin: 5px 415px 5px 415px ;	
+	
+}
+#navegacao-topo ul li{
+	
+	background: purple;	
+	display: inline;
+	margin: 10px ;	
+}
+#navegacao-topo ul li a {
+	color: white;	
+	
+}
+/* Conteudo*/
+#conteudo{
+	margin-top: 60px;
+}
+#barra-lateral{
+	width: 300px;
+	float: left;
+	margin: 0 0 20px -0px;
+	
+	background-color: rgb(250,128,114, 1.0);
+	
+}
+#barra-secundaria{
+	width: 390px;
+	float: left;
+	margin:  0 0 20px 105px;
+	
+	background-color:white;
+}
+#barra-tercearia{
+	width: 390px;
+	float: left;
+	margin: 0 0 20px 105px;
+	background-color: rgb(250,128,114, 0.3);
+	
+}
+
+/*barra secundária*/
+#barra-secundaria  h2{
+	padding: 15px;
+	margin-top: 20px;
+}
+#barra-secundaria p{
+	padding: 15px;
+	font-size: 1.3em;
+}
+
+/*Número de colunas na página*/
+#duas-colunas #barra-secundaria {
+	width:780px ;
+}
+#uma-coluna #barra-secundaria {
+	width: 1080px;
+	margin: 0 160px 0 160px;
+}
+
+/*Fotos*/
+
+.fotos{
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+}
+
+
+

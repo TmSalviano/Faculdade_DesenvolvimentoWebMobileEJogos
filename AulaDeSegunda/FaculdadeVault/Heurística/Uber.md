@@ -1,5 +1,3 @@
-Grupo 1 - Grupo da Pamela Gusmão
-
 - ■ visibilidade do estado do sistema; 
 		-  Quanto tempo falta.
 		-  Aviso quando chega o carro.

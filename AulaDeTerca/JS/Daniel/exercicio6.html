@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+function media() {
+var Raio =parseFloat( prompt("Digite o valor do raio", ""))
+
+var Comprimento = 2 * Math.PI * Raio;
+alert ("O comprimeto desta esfera é : " + Comprimento.toFixed(2));
+
+var Area = Math.PI * Raio * Raio;
+alert ("A área desta esfera é: " + Area.toFixed(2));
+
+var Volume = (4 / 3) * Math.PI * Math.pow(Raio, 3);
+alert ("O volume desta esfera é: " + Volume.toFixed(2));
+
+}
+</script>
+</head>
+<body>
+    <button onclick="media()">Calcular o comprimento, a área e o volume de uma esfera</button>
+</body>
+</html>

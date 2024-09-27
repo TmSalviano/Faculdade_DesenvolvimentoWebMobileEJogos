@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando a Função</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script>
+        function calcular() {
+            const x = parseFloat(document.getElementById("inputX").value);
+
+            // Definindo para a matriz as expecificações da função
+            const funcao = [
+                { condicao: (x) => x < -2, funcao: (x) => 2 * x + 2 },
+                { condicao: (x) => x >= -2 && x < 3, funcao: () => 3 },
+                { condicao: (x) => x >= 3, funcao: (x) => -x }
+            ];
+
+            // Percorrendo a matriz para encontrar a função correta para o intervalo de x
+            let resultado = "Nenhuma condição atendida";
+            for (let parte of funcao) {
+                if (parte.condicao(x)) {
+                    resultado = parte.funcao(x);
+                    break;
+                }
+            }
+
+            // Exibindo o resultado
+            const resultadoF = document.getElementById("resultado");
+            resultadoF.innerHTML = `<div class="alert alert-success" role="alert">Em f(x), quando x for ${x} o resultado será: ${resultado}</div>`;
+        }
+    </script>
+</head>
+<body class="container mt-5">
+    <h1 class="text-center">Calculando a função:</h1>
+    
+    <img src="Captura de tela 2024-09-25 153213.png" class="rounded mx-auto d-block" alt="Função">
+    
+    <div class="mb-3">
+        <label for="inputX" class="form-label">Insira o valor de x:</label>
+        <input type="number" class="form-control" id="inputX" placeholder="Digite um valor para x">
+    </div>
+    <button type="button" class="btn btn-outline-success" onclick="calcular()">Calcular</button>
+    
+    <!-- Exibir o resultado -->
+    <div class="mt-3" id="resultado"></div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

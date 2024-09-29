@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <html lang="pt-BR">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+            <title> Página inicial</title>
+            <style>
+                body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .profile-box {
+            background-color: white;
+            width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .profile-box h1 {
+            margin-bottom: 20px;
+        }
+
+        .profile-icon {
+            font-size: 90px;
+            color: silver;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        button {
+            background-color: #c51515;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #a31313;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+            </style>
+        </head>
+        <body>
+            <div class="profile-box">
+            <h1>Perfil</h1>
+            <i class="fas fa-user profile-icon"></i>
+            
+            <p><strong>Data de Nascimento:</strong> 14/02/2006</p>
+            <p><b>Profissão:</b> Não possuo no momento</p>
+            <p><b>Escolaridade:</b> Ensino Superior em andamento</p>
+            <p><b>Experiências profissionais:</b></p>
+
+            <ul>
+            <li>Auxiliar de Construção Civil</li>
+            <li>Auxiliar Elétrico</li>
+            <li>Desenvolvedor web</li>
+            </ul>
+            <button onclick="window.location.href='exercicio2.html'">
+                Voltar ao Login
+            </button>
+            </div>
+        </body>
+    </html>

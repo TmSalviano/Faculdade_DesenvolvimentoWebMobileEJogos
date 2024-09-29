@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Exercicio 1</title>
+            <style>
+                td{
+                    text-align: right;
+                    transition: all 0.3s ease;
+                }
+                td:hover{
+                    box-shadow: 0px 0px rgba(197, 21, 21, 0.838);
+                    transform: scale(1.1);
+                }
+                th{
+                    text-align: right;
+                    transition: all 0.3s ease ;
+                }
+                th:hover{
+                    box-shadow: 0px 0px rgba(197, 21, 21, 0.838);
+                    transform: scale(1.1);
+                }
+                .th.custom-cursor{
+                    cursor: pointer;
+                }
+                tr{
+                    text-align: center;
+                    transition: all 0.3s ease;
+                }
+                tr:hover{
+                    box-shadow: 0px 0px rgba(197, 21, 21, 0.838);
+                    transform: scale(1.1);
+                    background-color: orange;
+                }
+                button{
+                    padding: 5px 10px;
+                    background-color: #4CAF50;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                }
+                .button:hover{
+                    background-color: aqua;
+                }
+                .button.custom-cusor{
+                    cursor: pointer;
+                }
+            </style>
+    </head>
+    <body>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th scope="col">Aluno</th>
+                    <th scope="col">Nota P1</th>
+                    <th scope="col">Nota P2</th>
+                    <th scope="col">Nota T1</th>
+                    <th scope="col">Nota Total</th>
+                    <th scope="col">Faltas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th button onclick ="alert('Perfil de Ana')">Ana</th>
+                    <td>29</td>
+                    <td>17</td>
+                    <td>27</td>
+                    <td>73</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th button onclick="alert('Perfil de Gisele')">Gisele</th>
+                    <td>28</td>
+                    <td>18</td>
+                    <td>24</td>
+                    <td>70</td>
+                    <td>3</td>  
+                </tr>
+                <tr>
+                    <th button onclick="alert('Perfil de Jane')">Jane</th>
+                    <td>26</td>
+                    <td>20</td>
+                    <td>24</td>
+                    <td>70</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th button onclick="alert('Perfil de Jorge')">Jorge</th>
+                    <td>25</td>
+                    <td>19</td>
+                    <td>29</td>
+                    <td>73</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                <th button onclick="alert('Perfil de Marina')">Marina</th>
+                <td>30</td>
+                <td>16</td>
+                <td>27</td>
+                <td>73</td>
+                <td>1</td>
+                </tr>
+                <tr style="background-color: orange;">
+                    <th button onclick="alert('Média das Notas')">Média</th>
+                    <td>71,8</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

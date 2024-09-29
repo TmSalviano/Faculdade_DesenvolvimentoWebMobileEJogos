@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="meucss.css">
+        <style>
+        .login {
+            width: 300px;
+            padding: 20px;
+            margin: 50px auto;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .login:hover {
+            box-shadow: 0px 0px 20px rgba(197, 21, 21, 0.8);
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #c51515;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #a31313;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        </style>
+        <script>
+               function ValidarForm(){
+                var email = document.forms["logarForm"]["email"].value;
+                var senha = document.forms["logarForm"]["senha"].value;
+
+            if (email == "" || senha == "" ){
+                alert("Por favor, preencha os campos obrigatórios.");
+                return false;
+            }
+            alert("Login realizado com sucesso");
+            return true;
+            }
+        </script>
+    </head>
+    <body>
+        <div class ="login">
+            <form name="logarForm" action="perfil.html" method="post" onsubmit="return ValidarForm()">
+            <h1><b>Login</b></h1>
+
+            <h3><b>E-mail</b></h3>
+            <input type="email" placeholder="Digite seu e-mail" name="email" required>
+            <br>
+
+            <h3><b>Senha</b></h3>
+            <input type="password" placeholder="Digite sua senha" name="senha" required>
+            <br>
+                <br>
+                <button type="submit">Logar</button>
+                
+            
+            <button type="button" onclick="window.location.href='logon.html'"> 
+                Não possuo conta
+            </button>
+            </form>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,9 @@
+body{
+    display: grid;
+    place-items: start center;
+    margin: 0;
+    height: 100vh;
+    
+
+}
+

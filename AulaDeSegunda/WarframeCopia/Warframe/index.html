@@ -1,0 +1,78 @@
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Warframe</title>
+    <style>
+        body {
+            background-image: url('/media/warframe.png');
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the image */
+            height: 100vh; /* Full height of the viewport */
+            margin: 0; /* Remove default margin */
+        }
+        .card-container {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Full height for centering */
+            position: relative; /* Position relative for absolute child elements */
+        }
+        .card {
+            overflow: hidden; /* Prevent overflow */
+            height: auto; /* Allow height to adjust based on content */
+        }
+        .card img {
+            display: block; /* Make the image a block element */
+            margin: 0 auto; /* Center the image */
+            max-width: 100%; /* Make sure it doesn't overflow */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .card-body {
+            padding: 1rem; /* Adjust padding for the card body */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Brand</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="card-container">
+        <div class="card" style="width: 60vw;">
+            <div class="card-body text-center"> <!-- Centering content -->
+                <p class="card-title">25 de setembro de 2024</p>
+                <img src="/media/warframe.png" alt="warframe">
+                <h3 class="card-subtitle mb-2"><strong>Poderia ter alguma informação legal para vocês aqui</strong></h3>
+                <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing."</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

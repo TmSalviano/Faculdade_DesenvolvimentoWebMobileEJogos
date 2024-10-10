@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página de cadastro</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  
+        <link href="CSSLogon.css" rel="stylesheet">
+        <script>
+            function ValidarForm(){
+                var name = document.forms["cadastroForm"]["name"].value;
+                var RA = document.forms["cadastroForm"]["RA"].value;
+                var curso = document.forms["cadastroForm"]["curso"].value;
+                var periodo = document.forms["cadastroForm"]["periodo"].value;
+                var endereco = document.forms["cadastroForm"]["endereco"].value;
+                var email = document.forms["cadastroForm"]["email"].value;
+                var foto = document.forms["cadastroForm"]["foto"].value;
+                var UC = document.forms["cadastroForm"]["UC"].value;
+
+            if (name == "" || RA == "" || curso == ""|| periodo == "" || endereco == "" || email == "" || foto == "" || UC == ""){
+                alert("Por favor, preencha os campos obrigatórios.");
+                return false;
+            }
+            window.location.href = "# ";
+            return true;
+            }
+        </script>
+    </head>
+    <body>
+        <div class ="logon">
+            <form name="cadastroForm" method="post">
+        
+            <h1><b>Cadastro</b></h1>
+            <br>
+            <h3><b>Nome Completo</b></h3>
+            <input type="text" placeholder="Digite seu nome completo" name="name" required>
+            <br>
+            <h3><b>RA</b></h3>
+            <input type="number" placeholder="Insira seu RA" name="RA" required>
+            <br>
+            <h3><b>Curso</b></h3>
+            <input type="text" placeholder="Digite seu curso" name="curso" required>
+            <br>
+            <h3><b>Período</b></h3>
+            <input type="number" placeholder="Digite o período em que se encontra" name="periodo" required>
+            <br>
+            <h3><b>Endereço Completo</b></h3>
+            <input type="text" placeholder="Digite seu endereço" name="endereco" required>
+           <br>
+            <h3><b>E-mail</b></h3>
+            <input type="email" placeholder="Digite seu e-mail" name="email" required>
+            <br>
+            <h3><b>Foto de perfil</b></h3>
+            <input type="file" placeholder="Coloque uma foto sua" name="foto" required>
+            <br>
+            <h3><b>UC'S já cursadas</b></h3>
+            <input type="text" placeholder="Digite as UC'S já cursadas" name="UC" required>
+            <br>
+            <button type="button" onclick="ValidarForm()">Criar conta</button>
+          
+            
+          
+                <button type="submit" onclick="window.location.href='login01.html'"> 
+                    Já possuo conta
+                </button>
+            </form>
+        </div>
+        
+    </body>
+</html>

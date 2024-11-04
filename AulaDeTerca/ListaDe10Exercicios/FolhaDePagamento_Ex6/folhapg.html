@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+          * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eef2f7;
+    padding: 20px;
+    color: #333;
+}
+
+h2 {
+    color: #34495e;
+    margin-bottom: 20px;
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    margin: 20px auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+form:hover {
+    transform: scale(1.02);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s, background-color 0.3s;
+}
+
+form input:focus {
+    border-color: #3498db;
+    background-color: #f0f8ff;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #3498db;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+table td {
+    color: #555;
+    font-size: 16px;
+}
+
+table tr:hover {
+    background-color: #f4f7fa;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#table-body {
+    transition: all 0.3s ease-in-out;
+}
+
+td button {
+    padding: 8px 12px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+td button:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    table th, table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px; 
+    margin-bottom: 40px;
+}
+
+.form-section {
+    flex: 1; 
+    min-width: 280px; 
+}
+
+
+form button {
+    width: 48%; 
+    margin-right: 4%; 
+}
+
+#limparPesquisa {
+    background-color: #e74c3c;
+}
+
+#limparPesquisa:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 800px) {
+    .form-container {
+        flex-direction: column; 
+    }
+
+    form button {
+        width: 100%; 
+        margin: 0;
+    }
+}
+        </style>
+        </head>
+        <body>
+            <div class="form-container">
+                <div class="form-section">
+            <h2>Inserir Funcionário</h2>
+            <form id="formFuncionario">
+                <label for="codigo">Código:</label>
+                <input type="number" id="codigo" name="codigo" required>
+                    <br>
+                
+                    <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <br>
+                
+                <label for="valorHora">Valor Hora(R$):</label>
+                 <input type="number" id="valorHora" name="valorHora" required>
+                    <br>
+                
+                <label for="horasTrabalhadas">Horas Trabalhadas:</label>
+                <input type="number" id="horasTrabalhadas" name="horasTrabalhadas" required>
+                    <br>
+
+                <button type="submit">Adicionar Funcionário</button>
+            </form>
+                </div>
+                <div class="form-section">
+            <h2>Pesquisar Funcionario</h2>
+            <form id="formPesquisa">
+                <label for="pesquisa">Pesquisar por nome ou código</label>
+                <input type="text" id="pesquisa" name="pesquisa">
+                <button type="submit">Pesquisar</button>
+                <button id="limparPesquisa">Limpar Pesquisa</button>
+            </form>
+                </div>
+                    </div>
+            <h2>Lista de Funcionarios</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Valor da Hora (R$)</th>
+                        <th scope="col">Horas Trabalhadas</th>
+                        <th scope="col">Remuneção</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+
+                </tbody>
+            </table>
+            <script>
+                let db;
+                let request = indexedDB.open("MeuBanco", 1);
+
+                 request.onsuccess = function(event){
+                    db = event.target.result;
+                    console.log("Banco de dado está aberto");
+                    carregarDados();
+                };
+                request.onupgradeneeded = function(event){
+                    db = event.target.result;
+                    let store = db.createObjectStore("Funcionarios", {keyPath: "id", autoIncrement: true});
+
+                    store.createIndex("codigo", "codigo", {unique: true});
+                    store.createIndex("nome", "nome", {unique: false});
+                    store.createIndex("valorHora", "valorHora", {unique: false});
+                    store.createIndex("remuneracao", "remuneracao", {unique: false});
+
+                    console.log("Banco de dados configurado com sucesso!");
+                };
+            function insertFuncionario(codigo, nome, valorHora, horasTrabalhadas){
+                let transaction = db.transaction(["Funcionarios"], "readwrite");
+                let store = transaction.objectStore("Funcionarios");
+                let remuneracao = valorHora * horasTrabalhadas;
+                let Funcionario = {
+                    codigo: codigo,
+                    nome: nome,
+                    valorHora: valorHora,
+                    horasTrabalhadas: horasTrabalhadas,
+                    remuneracao: remuneracao
+                };
+                store.add(Funcionario);
+                transaction.oncomplete = carregarDados;
+            }
+            function carregarDados(termoPesquisa = ''){
+                let transaction =db.transaction(["Funcionarios"], "readonly");
+                let store = transaction.objectStore("Funcionarios");
+                let request = store.openCursor();
+                let tbody = document.getElementById("table-body");
+                tbody.innerHTML = "";
+
+                request.onsuccess = function(event){
+                    let cursor = event.target.result;
+                    if(cursor){
+                        let Funcionario = cursor.value;
+                        if(Funcionario.nome.toLowerCase().includes(termoPesquisa) ||
+                         String(Funcionario.codigo).includes(termoPesquisa)){
+
+                        let row = document.createElement("tr");
+                        row.innerHTML = `
+                        <td>${Funcionario.codigo}</td>
+                        <td>${Funcionario.nome}</td>
+                        <td>${Funcionario.valorHora.toFixed(2)}</td>
+                        <td>${Funcionario.horasTrabalhadas}</td>
+                        <td>${Funcionario.remuneracao.toFixed(2)}</td>
+                        <td><button onclick="apagarFuncionario(${Funcionario.id})">Apagar</button></td>
+                        `;  
+                        tbody.appendChild(row);
+                    }
+                        cursor.continue();
+                    }
+                };
+            }
+
+            document.getElementById("formFuncionario").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+
+            let codigo = document.getElementById("codigo").value;
+            let nome = document.getElementById("nome").value;
+            let valorHora = document.getElementById("valorHora").value;
+            let horasTrabalhadas = document.getElementById("horasTrabalhadas").value;
+            insertFuncionario(Number(codigo),nome, Number(valorHora), Number(horasTrabalhadas));
+
+            location.reload();
+            });
+            document.getElementById("formPesquisa").addEventListener("submit", function(event){
+                event.preventDefault();
+                let termoPesquisa = document.getElementById("pesquisa").value;
+                carregarDados(termoPesquisa);
+            });
+           
+            document.getElementById("limparPesquisa").addEventListener("click", function(){
+            document.getElementById("pesquisa").value="";
+            carregarDados();
+            location.reload();
+            });
+
+            function apagarFuncionario(id){
+                let transaction = db.transaction(["Funcionarios"], "readwrite");
+                let store = transaction.objectStore("Funcionarios");
+
+                let request = store.delete(id);
+
+                request.onsuccess = function(){
+                    console.log("Funcionario deletado com sucesso");
+                    carregarDados();
+                };
+                request.onerror = function(){
+                    console.log("Erro ao deletar o funcionario");
+                };
+            }
+            </script>
+        </body>
+</html>

@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troco</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+</head>
+<body>
+    <h2>Máquina de Troco</h2>
+    <label for="valorCompra">Valor da compra (R$):</label>
+    <input type="number" id="valorCompra" step="0.01" min="0"><br><br>
+
+    <label for="valorPago">Valor pago (R$):</label>
+    <input type="number" id="valorPago" step="0.01" min="0"><br><br>
+
+    <button onclick="calcularTroco()">Calcular Troco</button>
+
+    <h3>Resultado:</h3>
+    <div id="resultado"></div>
+
+   <script src="scripts/index.js" />
+</body>
+
+</html>

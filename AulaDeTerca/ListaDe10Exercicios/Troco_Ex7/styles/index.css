@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+}
+
+h2 {
+    color: #ffffff; /* White color for headings */
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border: 1px solid #333; /* Darker border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #1e1e1e; /* Darker background for inputs and buttons */
+    color: #ffffff; /* Light text for inputs and buttons */
+}
+
+button {
+    background-color: #6200ea; /* Purple background for button */
+    color: #ffffff; /* White text */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3700b3; /* Darker purple on hover */
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #333; /* Dark border */
+    background-color: #1e1e1e; /* Darker background for result box */
+    color: #ffffff; /* Light text for result box */
+    border-radius: 5px;
+}

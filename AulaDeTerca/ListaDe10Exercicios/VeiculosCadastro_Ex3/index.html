@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Veículos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .form-container {
+            margin-bottom: 20px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Cadastro de Veículos</h1>
+    <div class="form-container">
+        <label for="chassi">Número do Chassi:</label>
+        <input type="text" id="chassi" placeholder="Digite o número do chassi">
+
+        <label for="placa">Placa:</label>
+        <input type="text" id="placa" placeholder="Digite a placa do veículo">
+
+        <button onclick="cadastrarVeiculo()">Cadastrar Veículo</button>
+    </div>
+
+    <h2>Veículos Cadastrados</h2>
+    <table id="tabelaVeiculos">
+        <thead>
+            <tr>
+                <th>Número do Chassi</th>
+                <th>Placa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Os veículos cadastrados serão exibidos aqui -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
